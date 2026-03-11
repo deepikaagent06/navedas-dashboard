@@ -60,7 +60,7 @@ def show_dashboard():
     col1, col2 = st.columns([1,8])
 
     with col1:
-        st.image("./assets/governance_logo.jpg", width=140)
+        st.image("governance_logo.jpg", width=140)
 
     with col2:
         st.title("Navedas Intelligence")
@@ -386,5 +386,6 @@ If escalation automation is implemented, the organization could recover approxim
         batch_df = df.iloc[start:end]
 
         st.write(f"Showing Tickets {start + 1} - {min(end, len(df))}")
+
 
         st.dataframe(batch_df)
