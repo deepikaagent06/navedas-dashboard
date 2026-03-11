@@ -11,7 +11,7 @@ def login():
     col1, col2 = st.columns([1,4])
 
     with col1:
-        st.image("assets/governance_logo.jpg", width=200)
+        st.image("governance_logo.jpg", width=1000)
 
     with col2:
         st.title("Navedas Intelligence")
@@ -35,3 +35,4 @@ if st.session_state.logged_in:
 else:
 
     login()
+
